@@ -1,7 +1,8 @@
 <?php
 
-namespace App\Models;
+namespace App\Service\Event\Eloquent;
 
+use App\Service\Booking\Eloquent\Booking;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;

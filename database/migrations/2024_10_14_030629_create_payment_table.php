@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
             $table->integer('amount');
-            $table->foreignIdFor(\App\Models\Booking::class);
+            $table->foreignIdFor(\App\Service\Booking\Eloquent\Booking::class);
             $table->enum('status', ['pending', 'paid'])->default('pending');
         });
     }

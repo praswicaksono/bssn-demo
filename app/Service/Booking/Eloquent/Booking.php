@@ -1,7 +1,9 @@
 <?php
 
-namespace App\Models;
+namespace App\Service\Booking\Eloquent;
 
+use App\Service\Event\Eloquent\Event;
+use App\Service\Payment\Eloquent\Payment;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;

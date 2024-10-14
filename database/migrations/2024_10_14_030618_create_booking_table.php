@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('bookings', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->foreignIdFor(\App\Models\Event::class);
+            $table->foreignIdFor(\App\Service\Event\Eloquent\Event::class);
             $table->enum('status', ['pending', 'accepted', 'rejected'])->default('pending');
         });
     }
